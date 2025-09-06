@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "slug": "pink-ruffle-dress-1y",
+    "name": "Pink Ruffle Dress",
+    "description": "Soft cotton ruffle dress in pastel pink, perfect for birthdays and photos.",
+    "price": 24.99,
+    "currency": "USD",
+    "age": 1,
+    "image": "https://images.unsplash.com/photo-1520975682031-d71dfc6e83e2?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "slug": "floral-summer-set-2y",
+    "name": "Floral Summer Set",
+    "description": "Two-piece floral top and shorts set, breathable and comfy for playtime.",
+    "price": 19.5,
+    "currency": "USD",
+    "age": 2,
+    "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "slug": "cozy-knit-cardigan-3y",
+    "name": "Cozy Knit Cardigan",
+    "description": "Warm knit cardigan with wooden buttons, ideal for layering.",
+    "price": 29.0,
+    "currency": "USD",
+    "age": 3,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "slug": "bow-headband-pack-1-3y",
+    "name": "Bow Headband Pack (3)",
+    "description": "Set of three elastic bow headbands in pastel tones.",
+    "price": 9.99,
+    "currency": "USD",
+    "age": 1,
+    "image": "https://images.unsplash.com/photo-1531829039722-d3fb3e705a4b?q=80&w=800&auto=format&fit=crop"
+  }
+]

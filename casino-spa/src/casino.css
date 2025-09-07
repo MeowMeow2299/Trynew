@@ -76,3 +76,32 @@ section p { color: #b9bfd1; }
 .logo.react { filter: drop-shadow(0 0 4px rgba(97, 218, 251, 0.5)); }
 .cta { background: #ffd166; color: #0b0f1a; padding: 8px 12px; border-radius: 8px; font-weight: 700; text-decoration: none; }
 .cta:hover { filter: brightness(0.95); }
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 240px;
+  border: 1px solid #1f2942;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1542144582-1ba00456b5d5?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 16px;
+}
+.hero-overlay {
+  position: relative;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(11,15,26,0.25), rgba(11,15,26,0.85));
+  height: 100%;
+}
+.hero h1 { font-size: 28px; margin: 0 0 6px 0; color: #fff; }
+.hero p { color: #d8deed; margin: 0 0 12px 0; }
+.hero-actions { display: flex; gap: 10px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 8px; border: 1px solid #313b60; color: #e6e8ef; text-decoration: none; background: #121a2c; }
+.btn.primary { background: #ffd166; color: #0b0f1a; border-color: #ffd166; font-weight: 700; }
+.btn:hover { filter: brightness(1.05); }
+
+/* Panels */
+.panel { background: #0f1526; border: 1px solid #1f2942; border-radius: 12px; padding: 16px; margin-top: 12px; }
+.panel h2 { margin: 0 0 10px 0; font-size: 20px; color: #ffd166; }

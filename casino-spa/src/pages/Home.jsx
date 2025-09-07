@@ -1,13 +1,26 @@
+import Hero from '../components/Hero'
+
 export default function Home() {
+  const slots = ['Lucky 7', 'Gold Rush', 'Star Spin', 'Fruit Blast', 'Mega Win', 'Ocean Treasures']
   return (
-    <section>
-      <h1>Welcome to Casino Lite</h1>
-      <p>Play responsibly. Explore slots, blackjack, roulette, and more.</p>
-      <div className="cards">
-        <div className="card">Daily Spins</div>
-        <div className="card">Table Games</div>
-        <div className="card">Live Events</div>
-      </div>
-    </section>
+    <>
+      <Hero />
+      <section className="panel">
+        <h2>Hôm nay có gì hot?</h2>
+        <div className="cards">
+          <div className="card">Tặng thưởng chào mừng</div>
+          <div className="card">Hoàn tiền thứ 2</div>
+          <div className="card">Vòng quay miễn phí</div>
+        </div>
+      </section>
+      <section className="panel">
+        <h2>Slots phổ biến</h2>
+        <div className="grid">
+          {slots.map((name) => (
+            <div key={name} className="slot-tile">{name}</div>
+          ))}
+        </div>
+      </section>
+    </>
   )
 }

@@ -59,3 +59,20 @@ section p { color: #b9bfd1; }
 
 .vip-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .vip-card { background: linear-gradient(135deg, #20263b, #0f1526); border: 1px solid #313b60; padding: 20px; border-radius: 10px; text-align: center; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f1526;
+  border-bottom: 1px solid #1f2942;
+  padding: 8px 16px;
+}
+.logo-group { display: flex; align-items: center; gap: 10px; }
+.logo { height: 28px; }
+.logo.react { filter: drop-shadow(0 0 4px rgba(97, 218, 251, 0.5)); }
+.cta { background: #ffd166; color: #0b0f1a; padding: 8px 12px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+.cta:hover { filter: brightness(0.95); }

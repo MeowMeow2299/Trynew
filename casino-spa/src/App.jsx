@@ -8,6 +8,7 @@ import Blackjack from './pages/Blackjack'
 import Roulette from './pages/Roulette'
 import Promotions from './pages/Promotions'
 import VIP from './pages/VIP'
+import Topbar from './components/Topbar'
 
 function Sidebar() {
   return (
@@ -29,22 +30,24 @@ function AppLayout() {
   return (
     <div className="layout">
       <Sidebar />
-      <main className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/slots" element={<Slots />} />
-          <Route path="/blackjack" element={<Blackjack />} />
-          <Route path="/roulette" element={<Roulette />} />
-          <Route path="/promotions" element={<Promotions />} />
-          <Route path="/vip" element={<VIP />} />
-        </Routes>
-      </main>
+      <div className="content">
+        <Topbar />
+        <div style={{ paddingTop: 12 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/slots" element={<Slots />} />
+            <Route path="/blackjack" element={<Blackjack />} />
+            <Route path="/roulette" element={<Roulette />} />
+            <Route path="/promotions" element={<Promotions />} />
+            <Route path="/vip" element={<VIP />} />
+          </Routes>
+        </div>
+      </div>
     </div>
   )
 }
 
 function App() {
-  // Use the algorithm to validate routes (example usage)
   const routes = generateRoutesFromSidebar()
   if (routes.length < 5) {
     console.warn('Expected at least 5 routes from sidebar')

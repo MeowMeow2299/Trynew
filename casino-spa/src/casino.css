@@ -1,0 +1,61 @@
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+  background: #0b0f1a;
+  color: #e6e8ef;
+}
+.sidebar {
+  background: #0f1526;
+  border-right: 1px solid #1f2942;
+  padding: 16px;
+}
+.brand {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffd166;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c3c8d4;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.nav-link:hover {
+  background: #18203a;
+  color: #ffffff;
+}
+.icon { width: 20px; text-align: center; }
+.content {
+  padding: 24px;
+}
+section h1 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+section p { color: #b9bfd1; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.card { background: #131b2f; border: 1px solid #1f2942; padding: 16px; border-radius: 8px; text-align: center; }
+
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.slot-tile { background: #1b2540; border: 1px solid #273355; padding: 20px; border-radius: 8px; text-align: center; }
+
+.table { display: flex; gap: 10px; margin-top: 12px; }
+.chip { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
+.chip.red { background: #ff4d6d; }
+.chip.blue { background: #4dabf7; }
+.chip.gold { background: #ffd166; color: #0b0f1a; }
+
+.wheel { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 12px; }
+.sector { height: 40px; border-radius: 6px; }
+.sector.red { background: #e03131; }
+.sector.black { background: #111; }
+
+.promo-list { list-style: none; padding: 0; }
+.promo-item { background: #121a2c; border: 1px solid #1f2942; padding: 12px; border-radius: 8px; margin-bottom: 8px; }
+
+.vip-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vip-card { background: linear-gradient(135deg, #20263b, #0f1526); border: 1px solid #313b60; padding: 20px; border-radius: 10px; text-align: center; }
